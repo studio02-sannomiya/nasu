@@ -1,0 +1,27 @@
+// 幅1000px 中央揃え
+@mixin contentCenter {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+// 幅1200px 中央揃え
+@mixin contentCenter_1200px {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+// 通常サイズ
+@mixin font-weight_regular {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// 太字
+@mixin font-weight_bold {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}

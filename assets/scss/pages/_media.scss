@@ -1,0 +1,130 @@
+@use "../global/index" as *;
+
+@media (width < 500px) {
+
+    // top------------------------------------------------------------------------------------
+
+    .menu_mobile {
+        display: block;
+    }
+
+    .top_video {
+
+        .video_SP {
+            display: block;
+        }
+
+        .video_PC {
+            display: none;
+        }
+    }
+
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+
+    .top_menu.wrapper {
+        position: fixed;
+        max-width: 100%;
+        height: 100vh;
+
+        nav {
+            background-image: url(../images/wallPaper.jpg);
+            background-color: rgba(255, 255, 255, 0.8);
+            background-blend-mode: lighten;
+            background-size: cover;
+            position: fixed;
+            top: -120dvh;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100dvh;
+            transition: all .8s linear;
+            z-index: 1000;
+            display: none;
+
+            ul {
+                border-radius: 5px;
+                padding: 2rem;
+                position: absolute;
+                gap: 30px;
+                display: flex;
+                flex-direction: column;
+                writing-mode: vertical-rl;
+
+                li {
+                    font-size: $text_16px;
+                    color: #191919;
+
+                    span {
+                        margin-bottom: 1.5rem;
+
+                    }
+                }
+
+            }
+        }
+
+        nav.active {
+            top: 0;
+            transform: translateY(0);
+            display: block;
+        }
+    }
+
+    li::after {
+        background: #191919;
+    }
+
+    // トップページ以外のheader, menu bar------------------------------------------------------------------------------------
+    h1 {
+        position: fixed;
+        width: 147px;
+        top: 15px;
+        left: 19px;
+        z-index: 100000;
+    }
+
+    .wrapper {
+        nav {
+            top: -100dvh;
+            right: 0;
+            display: none;
+
+            .logo {
+                visibility: hidden;
+            }
+        }
+
+        nav.active {
+            top: 0;
+        }
+
+        .menu {
+            width: 100dvw;
+            height: 60px;
+
+            .box {
+                width: 100dvw;
+                height: 60px;
+
+                .boxChild {
+                    left: 90%;
+                }
+            }
+        }
+    }
+
+
+    //history
+    .company_sec02{
+        padding: 0;
+    }
+
+
+    //product
+    .swiper {
+        height: 20dvh;
+        margin-top: 60px;
+    }
+
+}

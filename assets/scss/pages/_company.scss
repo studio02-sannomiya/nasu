@@ -1,0 +1,179 @@
+@use "../global/index" as *;
+
+// sec01  -------------------------------------------------------
+.company_sec01 {
+    @include contentCenter;
+    display: flex;
+    gap: $padding_60px;
+
+    .founder {
+        dl {
+            display: flex;
+            justify-content: space-between;
+            font-size: $h3_clamp;
+            margin-bottom: 1rem;
+
+        }
+
+        .founder_img {
+            max-width: 300px;
+
+            img {
+                aspect-ratio: 3/4;
+                object-fit: cover;
+                object-position: 50% 15%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .greeting {
+        max-width: 600px;
+
+        p {
+            margin-bottom: 1rem;
+        }
+        .font_bold {
+            margin: $margin_20px;
+        }
+    }
+}
+
+// sec02  -------------------------------------------------------
+.company_sec02 {
+    background: url(../images/wallPaper.jpg) no-repeat center/cover;
+    width: 100%;
+    margin-right: $padding_100px;
+    cursor: pointer;
+    overflow-x: scroll;
+
+    /*IE(Internet Explorer)・Microsoft Edgeのスクロールバー削除*/
+    -ms-overflow-style: none;
+    /*Firefoxのスクロールバー削除*/
+    scrollbar-width: none;
+
+    h3 {
+        padding: 0;
+    }
+
+    .history{
+        min-width: 2500px;
+        font-size: $text_14px;
+
+        .history_dl{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: $padding_50px;
+
+            dl {
+                max-width: 100%;
+                height: 100%;
+                display: flex;
+                gap: 2rem;
+                writing-mode: vertical-rl;
+                font-feature-settings: 'pkna';
+                text-orientation: upright;
+
+                dt {
+                    flex-basis: 14%;
+                }
+                dd {
+                    line-height: 1.6;
+                }
+            }
+
+            .history_dl_img {
+                max-width: 300px;
+                min-width: 100px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.company_sec02 .history .history_dl span{
+    text-combine-upright: all;
+    text-align: center;
+    width: 100%;
+}
+
+.color_pink{
+    color: $pink_color;
+}
+
+/*Google Chrome、Safariのスクロールバー削除*/
+.company_sec02::-webkit-scrollbar {
+    display: none;
+}
+
+// sec03  -------------------------------------------------------
+.company_sec03 {
+    @include contentCenter;
+    display: flex;
+    gap: 10rem;
+
+    .summary {
+        flex-basis: 70%;
+
+        .summary_dl {
+            display: flex;
+            flex-direction: column;
+            gap: 1.875rem;
+
+            dl {
+                display: flex;
+                gap: $gap_80px;
+
+                dt {
+                    flex-basis: 40%;
+                }
+
+                dd {
+                    flex-basis: 60%;
+                }
+            }
+        }
+    }
+
+    .factory {
+        flex-basis: 30%;
+
+        .factory_01 {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.map {
+    text-align: center;
+    margin-bottom: $padding_100px;
+
+    .map_iframe {
+        max-width: 1000px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 5/4;
+    }
+}
+
+
+
+
+// 会社沿革を画像にしないなら消す
+.history{
+    height: 100vh;
+    .swiper {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        .swiper-wrapper{
+        transition-timing-function: linear;
+    }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+// ---------------------------

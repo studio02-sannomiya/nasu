@@ -1,0 +1,33 @@
+//　B案
+// サイトで使う色
+$text_color: #191919; //footer以外の文字色
+$footer_text_color: #FFFFFF; //footerの文字色
+$main_color: #FFFFFF; //ページ全体の背景色、footerの文字色　
+$sub_color_01: #E6D8B3; //メニューバーの背景色、よくある質問のQの背景色
+$sub_color_02: #AE9F7B; //footerの背景色、よくある質問のAの背景色
+$accent_color: #DF9393; //お問合せページの『必須』の背景色
+$footer_color_01: #B65F5F; //footerの『お問い合わせ』の背景色　
+$footer_color_02: #2D2309; //footerの『電話、メールアドレス』の背景色　
+$pink_color: #E3008B;
+
+//文字の大きさ
+// viewport min430px max1920px
+$h2_clamp: clamp(1.625rem, 1.517rem + 0.4vw, 2rem); //h2のレスポンシブ対応 min26px max32px
+$h3_clamp: clamp(1.25rem, 1.178rem + 0.27vw, 1.5rem); //h3のレスポンシブ対応 min20px max24px
+$text_20px: 1.25rem; // .font_bold
+$text_16px: 1rem; //本文
+$text_14px: 0.875rem; //年表
+$text_10px: 0.625rem; //footerの営業時間８:15~17:00（土日祝日を除く）部分
+
+//文字間の調整
+$padding_100px: 6.25rem; //h2の上下
+$padding_50px: 3.125rem; //h3の下
+$padding_60px: 3.75rem; //h3の下
+
+$margin_20px: 1.25rem;
+
+$gap_80px: 5rem;
+$faq_padding_01: 3.125rem; //class="faq"
+$faq_padding_02: 12.5rem; //class="faq"
+$faq_padding: 1.25rem; //class="faq"
+$faq_margin: 3.125rem; //qとaの間隔

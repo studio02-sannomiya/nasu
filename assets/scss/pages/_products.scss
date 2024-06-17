@@ -1,0 +1,23 @@
+@use "../global/index" as *;
+
+.swiper {
+    max-width: 100%;
+    height: 400px;
+
+    .swiper-wrapper {
+        max-width: 100%;
+        height: auto;
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+    }
+}

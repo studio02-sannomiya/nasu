@@ -1,0 +1,47 @@
+@use "../global/index" as *;
+
+.faq_background {
+    background: url(../images/wallPaper.jpg) repeat-y;
+}
+
+.faq_main {
+    @include contentCenter_1200px;
+
+    .faq {
+        padding: $faq_padding_01 $faq_padding_02;
+        margin: 15px auto;
+        background-color: $main_color;
+        box-shadow: 6px 6px 10px 0px rgba(48, 46, 42, 0.25);
+        border-radius: 50px;
+
+        .faq_content_q {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: $faq_margin;
+
+            .faq_q {
+                background-color: $sub_color_01;
+                border-radius: 10px;
+                padding: $faq_padding;
+            }
+        }
+
+        .faq_content_a {
+            display: flex;
+            gap: 2rem;
+
+            .faq_a {
+                background-color: $sub_color_02;
+                border-radius: 10px;
+                padding: $faq_padding;
+
+            }
+        }
+    }
+}
+
+.faq_icon {
+    max-width: 100px;
+    min-width: 50px;
+    aspect-ratio: 1/1;
+}

@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>なすの如し</title>
-    <meta name="description" content="">
-    <meta name="robots" content="noindex,nofollow" />
-    
-</head>
+    <title>五百城ニユートリイ株式会社</title>
+    <meta name="description" content="五百城ニユートリイ株式会社">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+    <meta name="robots" content="noindex, nofollow" />
+
+
 <body>
-    <main>
-        <h1>現在準備中</h1>
-    </main>
+    <h1><img class="pc" src="assets/images/logo_white.png" alt="パソコン用の画像">
+        <img class="sp" src="assets/images/logo_black.png" alt="スマートフォン用の画像">
+        </h1>
+
+    <div class="top_menu wrapper">
+        <nav>
+            <ul class="bg-none">
+                <li class="top animate__animated animate__fadeInLeft"><span></span><a href="company.html">会社案内</a></li>
+                <li class="top animate__animated animate__fadeInLeft"><span></span><a href="works.html">品質への取組</a></li>
+                <li class="top animate__animated animate__fadeInLeft"><span></span><a href="products.html">業務用製品</a></li>
+                <li class="top animate__animated animate__fadeInLeft"><span></span><a href="faq.html">よくある質問</a></li>
+                <li class="top animate__animated animate__fadeInLeft"><span></span><a href="contact.html">お問い合わせ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu menu_mobile">
+            <div class="box">
+                <div class="boxChild"></div>
+                <div class="boxChild"></div>
+                <div class="boxChild"></div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="top_video">
+        <video class="video_PC" src="assets/images/Inoki.MP4" loop autoplay muted></video>
+        <video class="video_SP" src="assets/images/ioki_mobile.MP4" loop autoplay muted></video>
+    </div>
+
+    <!-- type属性でmoduleを書いていないと動かなくなります -->
+    <script type="module" src="assets/js/app.js"></script>
+    <!-- moduleの外にあるjsファイルを読み込む際は、type="module" を入れない -->
+    <script src="assets/js/menu_animation.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 </body>
+
 </html>
